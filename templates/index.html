@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OptiCrop - Smart Agricultural Production Optimization Engine powered by Machine Learning for intelligent crop recommendations.">
+    <title>OptiCrop - Smart Agricultural Production Optimization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span class="brand-icon">🌾</span> OptiCrop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link highlight-link" href="/findyourcrop">Find Your Crop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">
+                        Smart Agricultural<br>
+                        <span class="gradient-text">Production Optimization</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Leverage the power of Machine Learning to get intelligent crop recommendations 
+                        based on soil nutrients and environmental conditions. Make data-driven farming 
+                        decisions for maximum yield and sustainability.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/findyourcrop" class="btn btn-primary btn-lg hero-btn">
+                            🌱 Find Your Crop
+                        </a>
+                        <a href="/about" class="btn btn-outline-light btn-lg hero-btn-outline">
+                            Learn More →
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">22+</div>
+                            <div class="stat-label">Crop Types</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Parameters</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%+</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-visual">
+                        <div class="floating-card card-1">
+                            <span>🌡️</span> Temperature
+                        </div>
+                        <div class="floating-card card-2">
+                            <span>💧</span> Humidity
+                        </div>
+                        <div class="floating-card card-3">
+                            <span>🧪</span> Soil pH
+                        </div>
+                        <div class="floating-card card-4">
+                            <span>🌧️</span> Rainfall
+                        </div>
+                        <div class="floating-card card-5">
+                            <span>🧬</span> NPK Levels
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title text-center">How OptiCrop Works</h2>
+            <p class="section-subtitle text-center">Three simple steps to smarter farming</p>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Input Parameters</h3>
+                        <p>Enter soil nutrients (N, P, K), temperature, humidity, pH level, and rainfall data from your farm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI Analysis</h3>
+                        <p>Our trained Machine Learning model analyzes your environmental data against thousands of agricultural records.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌾</div>
+                        <h3>Crop Recommendation</h3>
+                        <p>Receive an intelligent recommendation for the most suitable crop to maximize your yield and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Ready to Optimize Your Farm?</h2>
+            <p>Start making data-driven decisions for better agricultural productivity</p>
+            <a href="/findyourcrop" class="btn btn-lg btn-light cta-btn">Get Crop Recommendation →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 OptiCrop - Smart Agricultural Production Optimization Engine</p>
+            <p class="text-muted small">Powered by Machine Learning & Flask</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

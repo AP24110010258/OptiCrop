@@ -1,0 +1,13 @@
+# Render Blueprint — defines the service configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: opticrop
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app -c gunicorn_config.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
