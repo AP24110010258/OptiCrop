@@ -43,27 +43,30 @@ OptiCrop aims to develop an advanced software system that utilizes data-driven i
 
 ```
 OptiCrop/
-├── app.py                    # Flask application (routes & prediction logic)
-├── model.pkl                 # Trained ML model
-├── scaler.pkl                # Feature scaler
-├── requirements.txt          # Python dependencies
-├── gunicorn_config.py        # Production server config
+├── .gitignore                # Git ignore configuration
+├── README.md                 # Project documentation
 ├── render.yaml               # Render deployment blueprint
-├── Crop_recommendation.csv   # Training dataset
-├── opticrop_analysis.py      # Data analysis & model training script
-├── generate_dataset.py       # Dataset generation utility
-├── templates/
-│   ├── index.html            # Home page
-│   ├── about.html            # About page
-│   └── findyourcrop.html     # Crop prediction form & results
-├── static/
-│   └── css/
-│       └── style.css         # Custom styles
-└── plots/                    # EDA & model evaluation visualizations
-    ├── crop_distribution.png
-    ├── confusion_matrix.png
-    ├── kmeans_clusters.png
-    └── ...
+└── Project Files/            # Root folder for all project files
+    ├── app.py                    # Flask application (routes & prediction logic)
+    ├── model.pkl                 # Trained ML model
+    ├── scaler.pkl                # Feature scaler
+    ├── requirements.txt          # Python dependencies
+    ├── gunicorn_config.py        # Production server config
+    ├── Crop_recommendation.csv   # Training dataset
+    ├── opticrop_analysis.py      # Data analysis & model training script
+    ├── generate_dataset.py       # Dataset generation utility
+    ├── templates/
+    │   ├── index.html            # Home page
+    │   ├── about.html            # About page
+    │   └── findyourcrop.html     # Crop prediction form & results
+    ├── static/
+    │   └── css/
+    │       └── style.css         # Custom styles
+    └── plots/                    # EDA & model evaluation visualizations
+        ├── crop_distribution.png
+        ├── confusion_matrix.png
+        ├── kmeans_clusters.png
+        └── ...
 ```
 
 ---
@@ -83,19 +86,24 @@ OptiCrop/
    cd OptiCrop
    ```
 
-2. **Create a virtual environment** (recommended)
+2. **Navigate to the Project Files directory**
+   ```bash
+   cd "Project Files"
+   ```
+
+3. **Create a virtual environment** (recommended)
    ```bash
    python -m venv venv
    source venv/bin/activate        # macOS/Linux
    venv\Scripts\activate           # Windows
    ```
 
-3. **Install dependencies**
+4. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the application**
+5. **Run the application**
    ```bash
    python app.py
    ```
