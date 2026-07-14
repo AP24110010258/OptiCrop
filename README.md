@@ -44,6 +44,7 @@ OptiCrop aims to develop an advanced software system that utilizes data-driven i
 ```
 OptiCrop/
 ├── .gitignore                # Git ignore configuration
+├── Demo Video/               # Project demonstration video
 ├── README.md                 # Project documentation
 ├── render.yaml               # Render deployment blueprint
 └── Project Files/            # Root folder for all project files
